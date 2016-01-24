@@ -38,4 +38,11 @@ C:\kotesh\MRP4ME\MRP4ME\obj\x86\Debug\MRP4ME.csproj.GenerateResource.Cache
 C:\kotesh\MRP4ME\MRP4ME\obj\x86\Debug\Resources\resColors.baml
 C:\kotesh\MRP4ME\MRP4ME\obj\x86\Debug\Resources\resStyles.baml
 C:\kotesh\MRP4ME\MRP4ME\obj\x86\Debug\App.baml
-C:\kotesh\MRP4ME\MRP4ME\obj\x86\Debug\MRP4ME.csprojResolveAssemblyReference.cache
+C:\kotesh\MRP4ME\MRP4ME\obj\x86\Debug\MenuWindow.g.cs
+C:\kotesh\MRP4ME\MRP4ME\obj\x86\Debug\MenuWindow.baml
+C:\kotesh\MRP4ME\MRP4ME\obj\x86\Debug\Views\PurchaseOrderUI.baml
+C:\kotesh\MRP4ME\MRP4ME\obj\x86\Debug\Views\PurchaseOrderUI.g.cs
+C:\kotesh\MRP4ME\MRP4ME\obj\x86\Debug\UIElementsLib\MenuControl.g.cs
+C:\kotesh\MRP4ME\MRP4ME\obj\x86\Debug\UIElementsLib\MenuControl.baml
+C:\kotesh\MRP4ME\MRP4ME\obj\x86\Debug\Views\HomeUI.baml
+C:\kotesh\MRP4ME\MRP4ME\obj\x86\Debug\Views\HomeUI.g.cs

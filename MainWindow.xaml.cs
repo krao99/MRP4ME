@@ -12,6 +12,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.Windows.Shell;
+using MRP4ME.Models;
 
 
 
@@ -48,7 +49,7 @@ namespace MRP4ME
                     MessageBox.Show("PO added successfully");
                 }
             }
-            catch (Exception ex)
+            catch (Exception )
             {
                 MessageBox.Show("Error just occurred, please try again.", "MRP4ME", MessageBoxButton.OK, MessageBoxImage.Warning);
             }

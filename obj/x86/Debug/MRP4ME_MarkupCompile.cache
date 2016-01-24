@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\kotesh\MRP4ME\MRP4ME\App.xaml
-52096036168
+91860713446
 
-8-224074684
+14-1144114840
 232017101234
-MainWindow.xaml;Resources\GlassIcon.xaml;Resources\GlassButton.xaml;Resources\resColors.xaml;Resources\resStyles.xaml;
+MainWindow.xaml;UIElementsLib\MenuControl.xaml;MenuWindow.xaml;Resources\GlassIcon.xaml;Resources\GlassButton.xaml;Resources\resColors.xaml;Resources\resStyles.xaml;Views\HomeUI.xaml;Views\PurchaseOrderUI.xaml;
 
 False
 

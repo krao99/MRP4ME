@@ -98,6 +98,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Resources\MarginSetter.cs" />
+    <Compile Include="Utilities\UtilityStaticClass.cs" />
+    <Compile Include="Views\HomeUI.xaml.cs">
+      <DependentUpon>HomeUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PurchaseOrderUI.xaml.cs">
+      <DependentUpon>PurchaseOrderUI.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -111,6 +119,14 @@
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="UIElementsLib\MenuControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MenuWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Resources\GlassIcon.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -127,9 +143,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\HomeUI.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PurchaseOrderUI.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="POViewModel.cs" />
+    <Compile Include="UIElementsLib\MenuControl.xaml.cs">
+      <DependentUpon>MenuControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MenuWindow.xaml.cs">
+      <DependentUpon>MenuWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\POViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -158,17 +188,40 @@
     <Resource Include="images\mrp4me.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="images\BOM.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="images\Inventory Avaliability.png" />
-    <Resource Include="images\Material Specification.png" />
-    <Resource Include="images\Production Schedule.jpg" />
-    <Resource Include="images\Purchase Order.jpg" />
-    <Resource Include="images\Reports.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="images\mrp4meIcon.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\maximize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\minimize.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\restore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\MRP4MElogo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\BOM.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\inventory record file.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\purchase order.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\reports.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\schedule.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\specifications.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

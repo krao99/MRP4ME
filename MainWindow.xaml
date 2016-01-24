@@ -35,11 +35,12 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto" />
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="94*"/>
+            <RowDefinition Height="255*"/>
         </Grid.RowDefinitions>
 
         <!--provide the background for the entire form.  In practice, this appears as the window's resize border, because the title and window content obscure the rest-->
-        <Border CornerRadius="10,10,5,5" Grid.RowSpan="2" BorderThickness="1" BorderBrush="LightSteelBlue" Background="#FFE8FFC7"/>
+        <Border CornerRadius="10,10,5,5" Grid.RowSpan="3" BorderThickness="1" BorderBrush="LightSteelBlue" Background="#FFE8FFC7"/>
 
         <!--title bar-->
         <Border CornerRadius="10,10,0,0" BorderThickness="3,3,3,1" BorderBrush="LightSteelBlue" Margin="{Binding Path=CaptionButtonMargin}">
@@ -61,7 +62,7 @@
         <ccl:CaptionButtons  />
 
         <!--Content-->
-        <Grid Grid.Row="1">
+        <Grid Grid.Row="1" Grid.RowSpan="2">
             <TabControl x:Name="tabCtrlMain" Margin="5,4,0,0" FontSize="16" Background="Transparent" Foreground="Transparent" BorderThickness="0" >
                 <TabControl.Resources>
 
@@ -99,26 +100,21 @@
                         <Label x:Name="lblWelcome" Content="Welcome" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Height="48" Margin="0,29,3,0" VerticalAlignment="Top" Width="914" FontSize="18" FontWeight="Bold" Grid.ColumnSpan="3"/>
 
                         <Label Content="Bill of Materials" HorizontalAlignment="Left" Margin="145,99,0,0" VerticalAlignment="Top" FontSize="18" Foreground="#FFF5600B"/>
-                        <Image Height="140" Margin="134,132,134,0" VerticalAlignment="Top" Source="images/BOM.png" Stretch="Fill" Width="150"/>
+                        <Image Height="140" Margin="134,132,134,0" VerticalAlignment="Top"  Stretch="Fill" Width="150"/>
 
                         <Label Content="Inventory Avaliability" HorizontalAlignment="Left" Margin="153,386,0,0" VerticalAlignment="Top" FontSize="18" Background="Transparent" Grid.Column="2" Foreground="#FFF5600B"/>
-                        <Image Height="140" Margin="168,418,117,0" VerticalAlignment="Top" Source="images/Inventory Avaliability.png" Stretch="Fill" Width="150" Grid.Column="2"/>
+                        <Image Height="140" Margin="168,418,117,0" VerticalAlignment="Top"  Stretch="Fill" Width="150" Grid.Column="2"/>
 
                         <Label Content="Purchase Orders" HorizontalAlignment="Left" Margin="398,99,0,0" VerticalAlignment="Top" FontSize="18" Grid.ColumnSpan="3" Foreground="#FFF5600B"/>
-                        <Button x:Name="btnPurchaseOrder" Height="140" Width="150" Margin="395,133,405,397" Grid.ColumnSpan="3"  Background="Transparent" Click="btnPurchaseOrder_Click" BorderThickness="0">
-                            <Image Height="140" VerticalAlignment="Top" Source="images/Purchase Order.jpg" Stretch="Fill" StretchDirection="DownOnly" Width="150" Grid.ColumnSpan="3"/>
 
-                        </Button>
-                        
                         <Label Content="Materials Specification" HorizontalAlignment="Left" Margin="116,386,0,0" VerticalAlignment="Top" FontSize="18" Foreground="#FFF5600B"/>
-                        <Image Height="140" Margin="134,418,134,0" VerticalAlignment="Top" Source="images/Material Specification.png" Stretch="Fill" Width="150"/>
+                        <Image Height="140" Margin="134,418,134,0" VerticalAlignment="Top"  Stretch="Fill" Width="150"/>
 
                         <Label Content="Reports" HorizontalAlignment="Left" Margin="192,99,0,0" VerticalAlignment="Top" FontSize="18" Grid.Column="2" Foreground="#FFF5600B"/>
-                        <Image Height="140" Margin="168,132,127,0" VerticalAlignment="Top" Source="images/Reports.jpg" Stretch="Fill" Width="150" Grid.Column="2"/>
 
                         <Label Content="Production Schedule" HorizontalAlignment="Left" Margin="376,386,0,0" VerticalAlignment="Top" FontSize="18" Grid.ColumnSpan="3" Foreground="#FFF5600B"/>
-                        <Image Height="140" Margin="386,418,380,0" VerticalAlignment="Top" Source="images/Production Schedule.jpg" Width="150" Stretch="Fill" Grid.ColumnSpan="3"/>
-                       
+                        <Image Height="140" Margin="386,418,380,0" VerticalAlignment="Top"  Width="150" Stretch="Fill" Grid.ColumnSpan="3"/>
+
 
 
 
